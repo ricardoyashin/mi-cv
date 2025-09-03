@@ -16,10 +16,10 @@ body {
 
 header {
   background: linear-gradient(135deg, #0d1117, #161b22);
-  color: #f1c40f;
+  color: #B90E0A; /* Cambiado de #f1c40f */
   padding: 40px 0;
   text-align: center;
-  border-bottom: 2px solid #f1c40f;
+  border-bottom: 2px solid #B90E0A; /* Cambiado de #f1c40f */
 }
 
 header h1 {
@@ -50,18 +50,18 @@ section {
   margin: 20px 0;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(241,196,15,0.2);
+  box-shadow: 0 0 15px rgba(185,14,10,0.2); /* Cambiado de rgba(241,196,15,0.2) */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(241,196,15,0.4);
+  box-shadow: 0 0 20px rgba(185,14,10,0.4); /* Cambiado de rgba(241,196,15,0.4) */
 }
 
 section h2 {
-  color: #f1c40f;
-  border-bottom: 2px solid #f1c40f;
+  color: #B90E0A; /* Cambiado de #f1c40f */
+  border-bottom: 2px solid #B90E0A; /* Cambiado de #f1c40f */
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
