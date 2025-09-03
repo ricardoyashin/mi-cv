@@ -1,3 +1,10 @@
+/* Paleta Ironman */
+:root {
+  --iron-red:   #B90E0A;
+  --iron-gold:  #FFD700;
+  --iron-blue:  #0055AA;
+}
+
 body {
   font-family: 'Segoe UI', Arial, sans-serif;
   margin: 0;
@@ -14,12 +21,13 @@ body {
   overflow: hidden;
 }
 
+/* Header – fondo oscuro + título rojo + borde dorado */
 header {
   background: linear-gradient(135deg, #0d1117, #161b22);
-  color: #B90E0A; /* Cambiado de #f1c40f */
+  color: var(--iron-red);
   padding: 40px 0;
   text-align: center;
-  border-bottom: 2px solid #B90E0A; /* Cambiado de #f1c40f */
+  border-bottom: 2px solid var(--iron-gold);
 }
 
 header h1 {
@@ -32,40 +40,44 @@ header h1 {
   color: #ccc;
 }
 
-.contact-info p, .contact-info a {
+.contact-info p,
+.contact-info a {
   margin: 5px 0;
   color: #e6edf3;
 }
 
 .contact-info a:hover {
-  color: #58a6ff;
+  color: var(--iron-blue);
 }
 
 main {
   padding: 20px 0;
 }
 
+/* Secciones – borde y títulos en rojo + sombra azul muy sutil */
 section {
   background: #161b22;
   margin: 20px 0;
   padding: 20px;
   border-radius: 12px;
-  box-shadow: 0 0 15px rgba(185,14,10,0.2); /* Cambiado de rgba(241,196,15,0.2) */
+  border-left: 4px solid var(--iron-red);
+  box-shadow: 0 0 12px rgba(0, 85, 170, 0.15); /* azul suave */
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 section:hover {
   transform: scale(1.02);
-  box-shadow: 0 0 20px rgba(185,14,10,0.4); /* Cambiado de rgba(241,196,15,0.4) */
+  box-shadow: 0 0 20px rgba(0, 85, 170, 0.25);
 }
 
 section h2 {
-  color: #B90E0A; /* Cambiado de #f1c40f */
-  border-bottom: 2px solid #B90E0A; /* Cambiado de #f1c40f */
+  color: var(--iron-red);
+  border-bottom: 2px solid var(--iron-gold);
   padding-bottom: 5px;
   margin-bottom: 15px;
 }
 
+/* Skills */
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -82,11 +94,13 @@ section h2 {
   margin: 5px 0;
   padding: 8px;
   border-radius: 4px;
+  border-left: 3px solid var(--iron-gold);
 }
 
+/* Fechas y enlaces azules */
 .date {
   font-weight: bold;
-  color: #58a6ff;
+  color: var(--iron-blue);
 }
 
 .certifications li {
@@ -95,7 +109,7 @@ section h2 {
 
 .certifications .date {
   display: block;
-  color: #58a6ff;
+  color: var(--iron-blue);
   font-size: 0.9em;
   margin-top: 5px;
 }
