@@ -27,3 +27,9 @@ function revealOnScroll() {
 }
 window.addEventListener("scroll", revealOnScroll);
 revealOnScroll();
+/* --- Smokey Cursor --- */
+(() => {
+  const canvas = document.getElementById('fluid');
+  const ctx = canvas.getContext('2d');
+  /* …todo el resto del código del efecto… */
+})();
